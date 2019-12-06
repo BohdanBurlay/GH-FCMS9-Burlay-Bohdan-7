@@ -1,0 +1,35 @@
+
+.subscribe {
+  display: flex;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.user-email {
+  max-width: 563px;
+  height: 50px;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  padding-left: 25px;
+}
+
+.subscribe-button {
+  max-width: 269px;
+  width: 100%;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  text-transform: uppercase;
+  background-color: $ColorHetch;
+  color: white;
+  font-family: $OpenSans;
+  cursor: pointer;
+  margin-left: 30px;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid grey;
+    transition: 0.3s ease;
+  }
+}

@@ -1,0 +1,75 @@
+.logo-manu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-manu > img {
+  width: 158px;
+  height: 18px;
+}
+
+.menu {
+  display: flex;
+  color: white;
+  font-size: 16px;
+  font-family: $OpenSans;
+  font-weight: $Light;
+}
+
+.menu-icon {
+  margin-left: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+header > h2 {
+  font-size: 70px;
+  @include titlesStyles($OpenSans, $Bold, $textPosition);
+  text-transform: uppercase;
+  color: white;
+  margin-top: 180px;
+}
+
+.felder-color {
+  color: $ColorHetch;
+}
+
+header > p {
+  font-family: $OpenSans;
+  font-weight: $Light;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 35px;
+}
+
+.describe-link {
+  position: relative;
+  display: flex;
+  max-width: 450px;
+  margin: 68px auto 195px auto;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 245px;
+    left: 208px;
+    width: 34px;
+    height: 34px;
+    background-image: url("../../src/img/014__circle_arrow_down.png");
+    cursor: pointer;
+  }
+}
+
+.describe-link > a {
+  @include HireUs;
+
+  &:nth-child(2) {
+    margin-left: 27px;
+  }
+
+  &:hover {
+    background-color: $ColorHetch;
+    transition: 0.2s ease;
+  }
+}

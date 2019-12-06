@@ -1,0 +1,36 @@
+.about-us-flex-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.items {
+  width: 160px;
+
+  & > h3 {
+    @include titlesStyles($OpenSans, $Light, $textPosition)
+    text-transform: uppercase;
+    margin: 20px auto;
+  }
+
+  & > p {
+    @include titlesStyles($OpenSans, $Light, $textPosition)
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+.img-wrap {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 1px solid grey;
+
+  & > img {
+    display: block;
+    margin: 50px auto 0 auto;
+  }
+}

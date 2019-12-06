@@ -1,0 +1,24 @@
+@import "normalize/import-now";
+
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'base/basic';
+
+@import 'layout/Header/header';
+@import 'layout/Footer/footer';
+@import 'layout/Main/about-us';
+@import 'layout/Main/form-newsletter';
+@import 'layout/Main/our-works';
+@import 'layout/Main/employees';
+@import 'layout/Main/our-team';
+@import 'layout/Main/say-hello';
+@import 'pages/home';
+@import 'components/header-components';
+@import 'components/Manu-about-us-components';
+@import 'components/form-newsletter-components';
+@import 'components/placeholder';
+@import 'components/_our-works-components';
+@import 'components/employees-components';
+@import 'components/our-team-components';
+@import 'components/say-hello-components';
+@import 'components/_footer-component';

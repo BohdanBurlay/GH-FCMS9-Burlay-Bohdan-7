@@ -1,0 +1,57 @@
+.employees-content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slide-part {
+  max-width: 670px;
+  margin: 0 auto;
+
+  & > img {
+    display: block;
+    margin: 0 auto;
+    max-width: 129px;
+    height: 138px;
+    border-radius: 50%;
+  }
+
+  & > p {
+    font-family: $OpenSans;
+    font-weight: $Light;
+    color: white;
+    line-height: 1.5;
+    font-size: 19px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+  }
+
+  & > h4 {
+    font-family: $OpenSans;
+    font-weight: $SemiBild;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+  }
+}
+
+.previous, .next {
+  width: 21px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0);
+  border: 0;
+  outline: none;
+}
+
+.previous {
+  background-image: url("../../src/img/001__arrow_left.png");
+  color: rgba(0, 0, 0, 0);
+}
+
+.next {
+  background-image: url("../../src/img/001__arrow_left_kopia.png");
+  color: rgba(0, 0, 0, 0);
+}

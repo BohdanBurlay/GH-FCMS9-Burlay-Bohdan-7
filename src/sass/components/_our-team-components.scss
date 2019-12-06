@@ -1,0 +1,153 @@
+.our-team > h2 {
+  @include SectionTirtle
+}
+
+.our-team > p {
+  @include SectionParagraf(470px)
+}
+
+.team-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 133px auto 100px auto;
+  max-width: 1130px;
+}
+
+.team-gallery-item {
+  max-width: 252px;
+  margin-left: 40px;
+
+  &:hover > .social-media-links > a:before {
+    display: none;
+  }
+
+  &:hover > h3 {
+    transition: 0.3s ease;
+    color: black;
+  }
+
+  &:hover > p {
+    color: black;
+  }
+
+  &:nth-child(1) {
+    margin-left: 0;
+  }
+
+  & > h3 {
+    @include SectionTirtle
+    font-size: 20px;
+    color: #9DA1A5;
+    margin-top: 20px;
+  }
+
+  & > p {
+    text-align: center;
+    line-height: 1.5;
+    color: #9DA1A5;
+    font-family: $OpenSans;
+    font-weight: $Light;
+    font-size: 14px;
+  }
+}
+
+.image-span {
+  position: relative;
+
+  & > img {
+    width: 100%;
+    height: 284px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover > img {
+    transform: scale(1.1);
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -11px;
+    width: 273px;
+    height: 102%;
+    border-bottom: 5px solid $ColorHetch;
+    display: none;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    border-radius: 10px;
+    opacity: 0.7;
+    background-color: grey;
+  }
+
+  &:hover:before {
+    opacity: 0;
+  }
+
+  &:hover:after {
+    display: block;
+  }
+}
+
+.social-media-links {
+  width: 100px;
+  margin: 10px auto 10px auto;
+  display: flex;
+
+  & > a {
+    display: block;
+    position: relative;
+    margin-left: 14px;
+
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      background-color: grey;
+      border-radius: 50%;
+      opacity: 0.7;
+    }
+  }
+}
+
+.currentItem {
+  display: flex;
+  max-width: 120px;
+  margin: 0 auto;
+
+  .currentItem-Part {
+    width: 20px;
+    height: 20px;
+    background-color: #9DA1A5;
+    border-radius: 50%;
+    margin-left: 17px;
+
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+  }
+}
+
+.ght {
+  width: 52px;
+  height: 52px;
+}
